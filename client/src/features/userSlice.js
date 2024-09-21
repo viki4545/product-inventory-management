@@ -1,8 +1,9 @@
 // src/features/userSlice.js
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
+import { SERVER_BASE_URL } from "../utils/constant";
 
-const BASE_URL = "http://localhost:5000";
+const BASE_URL = SERVER_BASE_URL;
 
 export const registerUser = createAsyncThunk(
   "user/register",
